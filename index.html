@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Election Voting</title>
+    <title>Student Voting System</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Vote for Your Candidate</h1>
+    <h1>Vote for Your Favorite Candidate</h1>
     <form id="voteForm">
-        <label for="regNumber">Enter Your Registration Number:</label>
-        <input type="text" id="regNumber" required>
-
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" name="regNumber" required><br>
+        
+        <label>Candidate:</label>
         <div id="candidates">
-            <label>
-                <input type="radio" name="candidate" value="Candidate 1" required>
-                Candidate 1
-            </label>
-            <label>
-                <input type="radio" name="candidate" value="Candidate 2">
-                Candidate 2
-            </label>
-            <!-- Add more candidates as needed -->
+            <!-- Candidate options will be injected here by JavaScript -->
         </div>
-
+        
         <button type="submit">Submit Vote</button>
     </form>
     <p id="statusMessage"></p>
+    <script src="script.js"></script>
 </body>
 </html>
