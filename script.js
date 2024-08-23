@@ -10,7 +10,7 @@ document.getElementById('voteForm').addEventListener('submit', async function(e)
     }
 
     // Prepare data for submission
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzWVf8808xxPzLKu9C9Fwsmhjp-UFZlzmQl1Xzd7grnou3TNFYKupy0UJ99dNhufNg/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwS3B5N0glosL0P5tVeowbtwQ3_vOy86fW45Xw0GRrXZWQ175yy7aKy59oBA6bda1k4/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
