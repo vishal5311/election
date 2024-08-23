@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Election Voting</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Vote for Your Candidate</h1>
+    <form id="voteForm">
+        <label for="regNumber">Enter Your Registration Number:</label>
+        <input type="text" id="regNumber" required>
+
+        <div id="candidates">
+            <label>
+                <input type="radio" name="candidate" value="Candidate 1" required>
+                Candidate 1
+            </label>
+            <label>
+                <input type="radio" name="candidate" value="Candidate 2">
+                Candidate 2
+            </label>
+            <!-- Add more candidates as needed -->
+        </div>
+
+        <button type="submit">Submit Vote</button>
+    </form>
+    <p id="statusMessage"></p>
+</body>
+</html>
